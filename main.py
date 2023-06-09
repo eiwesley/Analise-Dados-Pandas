@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib
 
 # pd.set_option('max_columns', None)
 vendas_df = pd.read_csv(r'src/Contoso - Vendas  - 2017.csv', sep=';')
@@ -18,5 +19,9 @@ vendas_df = vendas_df.merge(produtos_df, on='ID Produto')
 vendas_df = vendas_df.merge(lojas_df, on='ID Loja')
 vendas_df = vendas_df.merge(clientes_df, on='ID Cliente')
 vendas_df = vendas_df.rename(columns={'E-mail': 'E-mail do Cliente'})
-
 print(vendas_df)
+
+frequencia_clientes = vendas_df['E-mail do Cliente'].value_counts()
+print(frequencia_clientes)
+
+frequencia_clientes[:5].plot()
