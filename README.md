@@ -19,7 +19,7 @@
 - [x] 11.Lendo um csv diretamente da internet
 - [x] 12.Obs- Integração de Python com Excel - Pandas ou openpyxl
 - [x] 13.Criando uma barra de progresso em Python - tqdm
-- [ ] 14.Projeto Análise de Dados
+- [X] 14.Projeto Análise de Dados
 
 ## ✔️ Tecnologias utilizadas
 - [Pandas](https://pandas.pydata.org/docs/user_guide/index.html#user-guide)
